@@ -64,14 +64,12 @@ const updateTaskDescription = async function(id, data) {
 //Function that deletes an item from the database.
 const deleteTaskData = function(id) {
     try {
-            fetch("http://localhost:3000/" + id, {
-            method: "DELETE",
-            headers: {
-                "Content-type": "application/json"
-            }
-        });
-
-        //might need to call getTasks again to update the database?
+        fetch("http://localhost:3000/" + id, {
+        method: "DELETE",
+        headers: {
+            "Content-type": "application/json"
+        }
+    });
 
     } catch (error) {
         console.log(error)

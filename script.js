@@ -91,7 +91,6 @@ const changeTaskDescription = function(e) {
     const changedDescription = {description: e.target.textContent};
 
     updateTaskDescription(selectedListItemId, changedDescription);
-    //Needs some form of timeOut before sending a put request (after 2 seconds of no typing, update)
 };
 
 
@@ -113,7 +112,6 @@ const addNewTask = async function() {
 
     if (taskInput.value == "") {
         alert("This can't be empty");
-        //Should become a text-message displayed under input instead of alert.
     } else { 
         const newLi = document.createElement("li");
 
@@ -144,7 +142,6 @@ const addNewTask = async function() {
         setEventListeners();
     };
 };
-//Should also add on enter.
 
 
 
