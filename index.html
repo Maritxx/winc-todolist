@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/7b829ce025.js" crossorigin="anonymous"></script>
+
+        <script defer src="api-client.js"></script>
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <header class="twelveHundred">
+            <h1>To-Do List</h1>
+        </header>
+
+        <main>
+            <section class="todo-list__holder twelveHundred">
+                <form class="todo-input__holder">
+                    <input type="text" id="task-input" name="task" placeholder="New Task">
+                    <button type="button" id="button-submit">Add</button>
+                </form>
+
+                <ul class="todo-tasks__holder" id="task-list">
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
